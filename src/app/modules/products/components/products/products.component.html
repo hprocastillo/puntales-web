@@ -1,0 +1,35 @@
+<!-- HEADER -->
+<app-products-header></app-products-header>
+
+<!-- CONTENT -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Productos</h2>
+      <p>Checka nuestros productos</p>
+    </div>
+
+    <!-- LIST PRODUCTS -->
+    <ng-container *ngIf="listProducts.length > 0">
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 portfolio-item" *ngFor="let product of listProducts">
+          <div class="portfolio-wrap text-center bg-white">
+            <img class="img-fluid w-50" src="{{product.photoURL1}}"
+                 alt="{{product.name}}">
+            <div class="portfolio-info">
+              <h4>{{product.name}}</h4>
+
+              <a [routerLink]="['/products/view', product.id]" title="Más detalles">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<app-products-footer></app-products-footer>

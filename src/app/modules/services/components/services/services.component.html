@@ -1,0 +1,32 @@
+<!-- HEADER -->
+<app-services-header></app-services-header>
+
+<!-- CONTENT -->
+<section id="services" class="services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Servicios</h2>
+      <p>Conoce nuestros servicios</p>
+    </div>
+
+    <!-- LIST SERVICES -->
+    <ng-container *ngIf="listServices.length > 0">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"
+             *ngFor="let service of listServices">
+          <div class="icon-box p-4">
+            <img class="img-fluid mb-4" src="{{service.photoURL1}}" alt="">
+            <h4><a [routerLink]="['/services/view',service.id]">{{service.name}}</a></h4>
+
+            <p>{{service.description}}</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<app-services-footer></app-services-footer>

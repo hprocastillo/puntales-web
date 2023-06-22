@@ -1,0 +1,82 @@
+<!-- HEADER -->
+<app-products-header></app-products-header>
+
+<!-- TITLE -->
+<section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="text-uppercase">{{product.name}}</h2>
+      <ol>
+        <li><a [routerLink]="'/products'">Productos</a></li>
+        <li class="text-capitalize">{{product.name}}</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section id="portfolio-details" class="portfolio-details">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner bg-dark text-center">
+            <div *ngIf="product.photoURL1" class="carousel-item active">
+              <img class="img-fluid w-50" src="{{product.photoURL1}}" alt="Productos">
+            </div>
+            <div *ngIf="product.photoURL2" class="carousel-item">
+              <img class="img-fluid w-50" src="{{product.photoURL2}}" alt="Productos">
+            </div>
+            <div *ngIf="product.photoURL3" class="carousel-item">
+              <img class="img-fluid w-50" src="{{product.photoURL3}}" alt="Productos">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>Características</h3>
+          <ul class="list-group list-group-flush ps-3">
+            <li *ngIf="product.feature1" style="list-style-type: disc">{{product.feature1}}</li>
+            <li *ngIf="product.feature2" style="list-style-type: disc">{{product.feature2}}</li>
+            <li *ngIf="product.feature3" style="list-style-type: disc">{{product.feature3}}</li>
+            <li *ngIf="product.feature4" style="list-style-type: disc">{{product.feature4}}</li>
+            <li *ngIf="product.feature5" style="list-style-type: disc">{{product.feature5}}</li>
+            <li *ngIf="product.feature6" style="list-style-type: disc">{{product.feature6}}</li>
+            <li *ngIf="product.feature7" style="list-style-type: disc">{{product.feature7}}</li>
+            <li *ngIf="product.feature8" style="list-style-type: disc">{{product.feature8}}</li>
+            <li *ngIf="product.feature9" style="list-style-type: disc">{{product.feature9}}</li>
+            <li *ngIf="product.feature10" style="list-style-type: disc">{{product.feature10}}</li>
+            <li></li>
+            <li></li>
+            <li class="ps-0">
+              <a class="btn btn-success"
+                 href="https://web.whatsapp.com/send?phone=51994011708&text=Hola%20Solicito%20una%20cotización%20del%20producto%20{{product.name}}%20..."
+                 target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>
+                Solicitar Cotización
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<app-products-footer></app-products-footer>

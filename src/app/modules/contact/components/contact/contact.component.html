@@ -1,0 +1,77 @@
+<!-- HEADER -->
+<app-contact-header></app-contact-header>
+
+
+<section id="contact" class="contact mt-5">
+  <div class="container pt-3" data-aos="fade-up">
+
+    <!-- TITLE -->
+    <div class="section-title">
+      <h2>ContactO</h2>
+      <p>ENCUENTRANOS AQUI!</p>
+    </div>
+
+    <!-- GOOGLE MAPS -->
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31212.846519653376!2d-76.982525!3d-12.07062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c645e075f505%3A0x512b992a700b5fc3!2sTitan%20Rieles!5e0!3m2!1ses-419!2spe!4v1687211448292!5m2!1ses-419!2spe"
+        width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <div class="row mt-5">
+      <!-- CONTACT DATA -->
+      <div class="col-lg-6">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Ubicación:</h4>
+            <p>Av. Prolongación Mariscal Nieto N.º 320 – ATE</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Correo electrónico:</h4>
+            <p>gerencia@titanrieles.com
+            </p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Teléfono:</h4>
+            <p>+51 994011708</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM MESSAGE -->
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <h4 class="mb-3">Envíanos un mensaje</h4>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nombres y Apellidos" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo electrónico"
+                   required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-warning">Enviar mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<app-contact-footer></app-contact-footer>
