@@ -23,9 +23,39 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/******************************************/
+/**************** SECTION *****************/
+/******************************************/
 section {
-  padding: 60px 0;
   overflow: hidden;
+}
+
+/** MOBILE 4" - PORTRAIT **/
+@media screen and (min-height: 500px) and (max-height: 800px) and (orientation: portrait) {
+  section {
+    padding: 80px 0 50px 0;
+  }
+}
+
+/** MOBILE 6" - PORTRAIT **/
+@media screen and (min-height: 800px) and (orientation: portrait) {
+  section {
+    padding: 90px 0 50px 0;
+  }
+}
+
+/** DESKTOP 720P **/
+@media screen and (min-width: 1280px) and (max-width: 1900px) and (orientation: landscape) {
+  section {
+    padding: 90px 0 50px 0;
+  }
+}
+
+/** DESKTOP 1080P **/
+@media screen and (min-width: 1900px) and (orientation: landscape) {
+  section {
+    padding: 100px 0 50px 0;
+  }
 }
 
 .section-title {
@@ -62,9 +92,10 @@ section {
   color: #151515;
 }
 
-/*--------------------------------------------------------------
-# Home Section
---------------------------------------------------------------*/
+/******************************************/
+/***************** HOME *******************/
+/******************************************/
+
 #home {
   width: 100%;
   height: 100vh;
@@ -168,44 +199,21 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-/** DESKTOP **/
-@media screen and (min-width: 1280px) and (orientation: landscape) {
-  .about {
-    padding: 140px 0 50px 0;
-  }
-}
-
-/** MOBILE **/
-@media screen and (min-width: 350px) and (orientation: portrait) {
-  .about {
-    padding: 80px 0 50px 0;
-  }
-}
+/******************************************/
+/***************** ABOUT ******************/
+/******************************************/
 
 .about {
   min-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-/** DESKTOP **/
-@media screen and (min-width: 1280px) and (orientation: landscape) {
-  .services {
-    padding: 140px 0 50px 0;
-  }
-}
+/******************************************/
+/*************** SERVICES *****************/
+/******************************************/
 
-/** MOBILE **/
-@media screen and (min-width: 350px) and (orientation: portrait) {
-  .services {
-    padding: 80px 0 50px 0;
-  }
+#services-home {
+  margin-top: 50px;
 }
-
 
 .services {
   background: whitesmoke;
@@ -266,12 +274,43 @@ section {
   transform: translateY(-10px);
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/******************************************/
+/************* BREADCRUMBS ****************/
+/******************************************/
+
+/** MOBILE 4" - PORTRAIT **/
+@media screen and (min-height: 500px) and (max-height: 800px) and (orientation: portrait) {
+  .breadcrumbs {
+    padding: 120px 0 20px 0;
+  }
+}
+
+/** MOBILE 6" - PORTRAIT **/
+@media screen and (min-height: 800px) and (orientation: portrait) {
+  .breadcrumbs {
+    padding: 130px 0 20px 0;
+  }
+}
+
+/** DESKTOP 720P **/
+@media screen and (min-width: 1280px) and (max-width: 1900px) and (orientation: landscape) {
+  .breadcrumbs {
+    margin-top: 80px;
+    padding: 40px 0 0 0;
+  }
+}
+
+/** DESKTOP 1080P **/
+@media screen and (min-width: 1900px) and (orientation: landscape) {
+  .breadcrumbs {
+    margin-top: 80px;
+    padding: 50px 0 10px 0;
+  }
+}
+
 .breadcrumbs {
-  margin-top: 74px;
-  padding: 50px 0 15px 0;
+  //margin-top: 74px;
+  //padding: 50px 0 15px 0;
   background: whitesmoke;
   min-height: 40px;
 }
@@ -318,21 +357,12 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-/** DESKTOP **/
-@media screen and (min-width: 1280px) and (orientation: landscape) {
-  .portfolio {
-    padding: 140px 0 50px 0;
-  }
-}
+/******************************************/
+/*************** PORTFOLIO ****************/
+/******************************************/
 
-/** MOBILE **/
-@media screen and (min-width: 350px) and (orientation: portrait) {
-  .portfolio {
-    padding: 80px 0 50px 0;
-  }
+#portfolio-home {
+  margin-top: 50px;
 }
 
 .portfolio {
@@ -525,21 +555,12 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-/** DESKTOP **/
-@media screen and (min-width: 1280px) and (orientation: landscape) {
-  .contact {
-    padding: 140px 0 50px 0;
-  }
-}
+/******************************************/
+/*************** CONTACT ******************/
+/******************************************/
 
-/** MOBILE **/
-@media screen and (min-width: 350px) and (orientation: portrait) {
-  .contact {
-    padding: 80px 0 50px 0;
-  }
+#contact-home {
+  margin-top: 50px;
 }
 
 .contact {
@@ -678,9 +699,10 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/******************************************/
+/***************** FOOTER *****************/
+/******************************************/
+
 #footer {
   background: black;
   padding: 0 0 30px 0;
