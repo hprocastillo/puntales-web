@@ -169,11 +169,45 @@ section {
 }
 
 /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+/** DESKTOP **/
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  .about {
+    padding: 140px 0 50px 0;
+  }
+}
+
+/** MOBILE **/
+@media screen and (min-width: 350px) and (orientation: portrait) {
+  .about {
+    padding: 80px 0 50px 0;
+  }
+}
+
+.about {
+  min-height: 40px;
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+/** DESKTOP **/
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  .services {
+    padding: 140px 0 50px 0;
+  }
+}
+
+/** MOBILE **/
+@media screen and (min-width: 350px) and (orientation: portrait) {
+  .services {
+    padding: 80px 0 50px 0;
+  }
+}
+
+
 .services {
-  margin-top: 80px;
-  padding: 80px 0 50px 0;
   background: whitesmoke;
   min-height: 40px;
 }
@@ -287,9 +321,21 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+/** DESKTOP **/
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  .portfolio {
+    padding: 140px 0 50px 0;
+  }
+}
+
+/** MOBILE **/
+@media screen and (min-width: 350px) and (orientation: portrait) {
+  .portfolio {
+    padding: 80px 0 50px 0;
+  }
+}
+
 .portfolio {
-  margin-top: 80px;
-  padding: 100px 0 50px 0;
   background: whitesmoke;
   min-height: 40px;
 }
@@ -482,9 +528,24 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact{
-  padding-top: 80px;
+/** DESKTOP **/
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  .contact {
+    padding: 140px 0 50px 0;
+  }
 }
+
+/** MOBILE **/
+@media screen and (min-width: 350px) and (orientation: portrait) {
+  .contact {
+    padding: 80px 0 50px 0;
+  }
+}
+
+.contact {
+  min-height: 40px;
+}
+
 .contact .info {
   width: 100%;
 }

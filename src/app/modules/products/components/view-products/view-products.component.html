@@ -63,11 +63,19 @@
             <li></li>
             <li></li>
             <li class="ps-0">
-              <a class="btn btn-success"
+              <a class="btn btn-success w-75"
                  href="https://web.whatsapp.com/send?phone=51994011708&text=Hola%20Solicito%20una%20cotización%20del%20producto%20{{product.name}}%20..."
                  target="_blank">
                 <i class="bi bi-whatsapp me-2"></i>
                 Solicitar Cotización
+              </a>
+            </li>
+            <li *ngIf="product.dataSheetURL" class="ps-0">
+              <a class="btn btn-danger w-75"
+                 href="{{product.dataSheetURL}}"
+                 target="_blank">
+                <i class="bi bi-filetype-pdf me-2"></i>
+                Ficha técnica
               </a>
             </li>
           </ul>
